@@ -1,25 +1,28 @@
-package com.operator;
+package com.example;
 import java.util.Scanner;
 
 public class OperatorEx {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Scanner sc = new Scanner(System.in);
+		String x = "Bob";
+		String y = "Cat";
 		
-		System.out.println("Enter two number:-");
-		int num1 = sc.nextInt();
+		System.out.println("Enter your username");
+		String uname = sc.nextLine();
 		
-		int num2 = sc.nextInt();
-		//assignment operator
-		num1 += 4;
-		num2 -= 4;
-		System.out.println(num1);
-		System.out.println(num2);
+		System.out.println("Enter your password");
+		String pass = sc.nextLine();
 		
-		
-		
-
+		if(uname.equals(x)&&pass.equals(y))
+		{
+			System.out.println("You are welcome");
+		}
+		else
+		{
+			System.out.println("Wrong password");
+		}
 	}
 
 }
